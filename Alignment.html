@@ -1,0 +1,104 @@
+<!-- alignment thorugh float and clear -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My store</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Smooch&display=swap" rel="stylesheet">
+     <style>
+         
+         .container{
+            border:5px solid black;
+            margin:auto;
+            width: 800px;
+            background-color: aqua;
+            color: rgb(183, 29, 29);
+            border-radius: 30px;
+            font-family: 'Smooch', cursive;
+         }
+         h1{
+             margin: 20px;
+         }
+         .item{
+             font-size: medium;
+
+         }
+         a{
+             margin: 20px;
+             border: 3px solid black;
+             padding: 4px;
+             border-radius: 10px;
+         }
+         #btn1{
+             background-color: white;
+             clear: both;
+             margin: 20px;
+             border-radius: 30px;
+         }
+         a:hover{
+             background-color: green;
+         }
+         #btn1:hover{
+             background-color: green;
+         }
+         #fruits{
+            border:5px solid black;
+            border-radius: 50px;
+            margin: 5px;
+            margin-left: 20px;
+            padding: 25px;
+            width:300px;
+            float:left;
+            
+         }
+         #computer{border:5px solid black;
+            border-radius: 50px;
+            margin: 5px;
+            margin-right: 20px;
+            padding: 25px;
+            width:300px;
+            float:right;
+
+         }
+         #stationary{border:5px solid black;
+            border-radius: 40px;
+            margin: 25px;
+            margin-top: 300px;
+            margin-left: 30px;
+            padding: 15px;
+            width:700px;
+            /* float: inline-end; */
+            clear: both;
+
+         }
+     </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Grocery Store</h1>
+
+        <div id="fruits" class="item">
+            <h3>Fruits:</h3>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur tempore, soluta possimus nobis laboriosam repudiandae repellat perspiciatis earum quia dolorum voluptatem quaerat nisi quisquam rerum eum dicta libero, ducimus exercitationem.
+
+            
+        </div>
+        <div id="computer" class="item">
+            <h3>Computer:</h3>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur tempore, soluta possimus nobis laboriosam repudiandae repellat perspiciatis earum quia dolorum voluptatem quaerat nisi quisquam rerum eum dicta libero, ducimus exercitationem.
+
+        </div>
+        <div id="stationary" class="item">
+            <h3>Stationary:</h3>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur tempore, soluta possimus nobis laboriosam repudiandae repellat perspiciatis earum quia dolorum voluptatem quaerat nisi quisquam rerum eum dicta libero, ducimus exercitationem.
+
+        </div>
+        <a href="">Read more</a><br>
+        <button id="btn1">Go to my store</button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Queries</title>
+    <style>
+        .box{
+            background-color: brown;
+            text-align: center;
+            font-size: 3em;
+           display: none;
+            
+        }
+        @media (max-width:800px)
+        {
+            #box-1{
+                display: block;
+            }
+           
+        }
+        @media (max-width:1000px) 
+        {
+            #box-4{
+                display: block;
+                background-color: aqua;
+            }
+           
+        }
+    </style>
+</head>
+<body>
+    <div class="box" id="box-1">I am small</div>
+    <div class="box" id="box-2">I am M</div>
+    <div class="box" id="box-3">I am L</div>
+    <div class="box" id="box-4">I am XL</div>
+</body>
+</html>

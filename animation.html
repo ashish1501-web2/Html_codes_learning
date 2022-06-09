@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        body{
+            color: white;
+        }
+        .container{
+            background-color: aqua;
+        }
+        .box{
+            width: 300px;
+            height: 300px;
+            /* very very important to set postion to be relative */
+            position: relative;
+            background-color: black;
+            /* animation-name: ashish2;
+            animation-duration: 5s;
+            animation-fill-mode: alternate;
+            animation-iteration-count:5;
+            animation-delay: 1s;
+            animation-timing-function: ease-in-out; */
+
+            /* short hand */
+
+            /* animation:: name  duration timing function delay iteration count fill-mode */
+            animation: ashish2 5s ease-in-out 0.5s 5 backwards;
+
+        }
+        @keyframes ashish2{
+            0%{
+                top: 0px;
+                left:0px;
+
+            }
+            25%{
+                top: 0px;
+                left: 100%;
+            }
+            50%{
+                top: 1000px;
+                left: 0px;
+            }
+            75%{
+                top: 500px;
+                left: 500px;
+            }
+            100%{
+                top: 1000px;
+                left: 1000px;
+            }
+        }
+
+        /* @keyframes ashish{
+            0%{
+                width: 50%;
+            }
+            50%{
+                width: 0%;
+            }
+            100%{
+                width: 100%;
+            }
+        } */
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            this is box
+        </div>
+    </div>
+</body>
+</html>
